@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    div.container
+        h1= title
+
+        div.content-border
+            form#formAddUser(role="form" name='adduser', method='post', action='/adduser')
+                div.form-group
+                    label(for="inputUserName") User Name:
+                    input.form-control#inputUserName(type='text', placeholder='User Name', name='username')
+                div.form-group
+                    label(for="inputUserEmail") User Email:
+                    input.form-control#inputUserEmail(type='text', placeholder='User Email', name='useremail')
+                button.btn.btn-success(type='submit') Submit
+
+   
+
+  

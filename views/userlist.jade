@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    div.container
+        h1.
+            User List
+        div.content-border
+            ol
+                each user, i in userlist
+                    li
+                        a(href="mailto:#{user.email}")= user.username
+        
